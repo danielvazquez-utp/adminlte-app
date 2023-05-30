@@ -1,4 +1,5 @@
 import React from 'react';
+import adminLogo from '../../public/dist/img/AdminLTELogo.png';
 
 const Header = () => {
   return (
@@ -6,7 +7,7 @@ const Header = () => {
         <nav className="main-header navbar navbar-expand-md navbar-light navbar-white">
             <div className="container">
             <a href="../../index3.html" className="navbar-brand">
-                
+            <img src={ adminLogo } alt="AdminLTE Logo" className="brand-image img-circle elevation-2 mr-2" style={{ opacity: "0.8", width: "20%" }} />
                 <span className="brand-text font-weight-light">AdminLTE 3</span>
             </a>
 

@@ -1,17 +1,11 @@
-import React from 'react';
-import Header from './components/Header';
-import Aside from './components/Aside';
-import Content from './components/Content';
-import Footer from './components/Footer';
+import * as React from 'react';
+import TopNavigation from './components/TopNavigation';
+
 
 const App = () => {
   return (
-    <>
-      <Header />
-      <Content />
-      <Footer />
-    </>
+    <TopNavigation />
   )
 }
 
-export default App;
+export default App
