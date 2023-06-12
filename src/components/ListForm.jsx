@@ -1,14 +1,31 @@
+import { Link } from 'react-router-dom';
+
 const ListForm = () => {
     return (
         <>
-            <section className="content">
-                <div class="container-fluid">
+            <div className="content-wrapper">
+                <section className="content-header">
+                    <div className="container-fluid">
+                        <div className="row mb-2">
+                            <div className="col-sm-6">
+                                <h1>Productos registrados</h1>
+                            </div>
+                            <div className="col-sm-6">
+                                <ol className="breadcrumb float-sm-right">
+                                    <li className="breadcrumb-item"><Link to="/menu">Inicio</Link></li>
+                                    <li className="breadcrumb-item active">Productos registrados</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section className="content">
+
                     <div className="row">
                         <div className="col-12">
                             <div className="card card-success">
-                                <div className="card-header">
-                                    <h3 className="card-title">DataTable with default features</h3>
-                                </div>
+                                
                                 <div className="card-body">
                                     <table id="tabla" className="table table-bordered table-striped">
                                         <thead>
@@ -443,9 +460,9 @@ const ListForm = () => {
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
 
+                </section>
+            </div>
         </>
     )
 }

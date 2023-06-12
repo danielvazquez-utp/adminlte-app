@@ -1,9 +1,12 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+
 import TopNavigation from './components/TopNavigation';
 import LoginBox from './components/LoginBox';
 import { useState } from 'react';
-import AddForm from './components/AddForm';
-import ListForm from './components/ListForm';
 import BlankPage from './components/BlankPage';
+import AddProduct from './components/AddProduct';
+import ListProducts from './components/ListProducts';
+import Menu from './components/Menu';
 
 const App = () => {
 
@@ -42,9 +45,16 @@ const App = () => {
   }
 
   return (
-    <>
-      { getLocation() }
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route exact path="/" element={ <LoginBox /> } />
+        <Route path="/menu" element={ <Menu /> } />
+        <Route path="/top" element={ <TopNavigation /> } />
+        <Route path="/add" element={ <AddProduct /> } />
+        <Route path="/list" element={ <ListProducts /> } />
+        <Route path="/blank" element={ <BlankPage /> } />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
