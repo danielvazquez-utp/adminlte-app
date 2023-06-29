@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import BtnMainMenu from './botones/BtnMainMenu';
 
 const MenuItems = () => {
     return (
@@ -47,8 +48,16 @@ const MenuItems = () => {
                                 <Link to="/list" className="small-box-footer">Ir a productos registrados <i className="fas fa-arrow-circle-right"></i></Link>
                             </div>
                         </div>
+                        <div className="col-xs-12 col-md-6 col-lg-4">
+                            <BtnMainMenu titulo='Categorías' leyenda='Ir a Categorías ' icono='fas fa-couch' />
+                        </div>
+                        <div className="col-xs-12 col-md-6 col-lg-4">
+                            <BtnMainMenu titulo='Usuarios' leyenda='Ir a Usurios ' icono='fas fa-users' />
+                        </div>
+                        <div className="col-xs-12 col-md-6 col-lg-4">
+                            <BtnMainMenu titulo='Entradas & Salidas' leyenda='Ir a Entradas & Salidas ' icono='fas fa-boxes' />
+                        </div>
                     </div>
-
                 </section>
             </div>
         </>
