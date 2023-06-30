@@ -12,7 +12,6 @@ const Navbar = () => {
                     <li className="nav-item d-none d-sm-inline-block">
                         <Link to="/menu" className="nav-link">Inicio</Link>
                     </li>
-                    
                 </ul>
 
                 <ul className="navbar-nav ml-auto">

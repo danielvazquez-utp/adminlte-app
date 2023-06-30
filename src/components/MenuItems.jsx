@@ -13,7 +13,7 @@ const MenuItems = () => {
                             </div>
                             <div className="col-sm-6">
                                 <ol className="breadcrumb float-sm-right">
-                                    <li className="breadcrumb-item"><a href="#">Inicio</a></li>
+                                    <li className="breadcrumb-item">Inicio</li>
                                     <li className="breadcrumb-item active">Menú principal</li>
                                 </ol>
                             </div>
@@ -49,7 +49,12 @@ const MenuItems = () => {
                             </div>
                         </div>
                         <div className="col-xs-12 col-md-6 col-lg-4">
-                            <BtnMainMenu titulo='Categorías' leyenda='Ir a Categorías ' icono='fas fa-couch' />
+                            <BtnMainMenu 
+                                icono='fas fa-couch'
+                                leyenda='Ir a Categorías '
+                                ruta='/mCategorias'
+                                titulo='Categorías'
+                            />
                         </div>
                         <div className="col-xs-12 col-md-6 col-lg-4">
                             <BtnMainMenu titulo='Usuarios' leyenda='Ir a Usurios ' icono='fas fa-users' />

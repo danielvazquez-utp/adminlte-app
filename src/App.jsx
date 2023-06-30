@@ -7,6 +7,8 @@ import BlankPage from './components/BlankPage';
 import AddProduct from './components/AddProduct';
 import ListProducts from './components/ListProducts';
 import Menu from './components/Menu';
+import MenuCategoria from './components/categorias/MenuCategoria';
+import AddCategoria from './components/categorias/AddCategoria';
 
 const App = () => {
 
@@ -53,6 +55,11 @@ const App = () => {
         <Route path="/add" element={ <AddProduct /> } />
         <Route path="/list" element={ <ListProducts /> } />
         <Route path="/blank" element={ <BlankPage /> } />
+        
+        {/* Categorias */}
+        <Route path="/mCategorias" element={ <MenuCategoria /> } />
+        <Route path="/addCategoria" element={ <AddCategoria /> } />
+
       </Routes>
     </BrowserRouter>
   )
