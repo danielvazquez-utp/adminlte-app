@@ -9,6 +9,7 @@ import ListProducts from './components/ListProducts';
 import Menu from './components/Menu';
 import MenuCategoria from './components/categorias/MenuCategoria';
 import AddCategoria from './components/categorias/AddCategoria';
+import GetCategorias from './components/categorias/GetCategorias';
 
 const App = () => {
 
@@ -59,7 +60,7 @@ const App = () => {
         {/* Categorias */}
         <Route path="/mCategorias" element={ <MenuCategoria /> } />
         <Route path="/addCategoria" element={ <AddCategoria /> } />
-
+        <Route path='/getCategorias' element={ <GetCategorias /> } />
       </Routes>
     </BrowserRouter>
   )
