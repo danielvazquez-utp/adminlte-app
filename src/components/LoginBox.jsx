@@ -43,7 +43,7 @@ const LoginBox = () => {
                             <div className="col-8">
                                 <div className="icheck-primary">
                                     <input type="checkbox" id="remember" />
-                                        <label for="remember">
+                                        <label>
                                             Remember Me
                                         </label>
                                 </div>
