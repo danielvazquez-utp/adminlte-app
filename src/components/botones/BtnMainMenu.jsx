@@ -1,6 +1,7 @@
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
-const BtnMainMenu = ({ titulo="Titulo", ruta="/", leyenda="Ir a ...", icono="ion ion-bag" }) => {
+const BtnMainMenu = ({ titulo, ruta="/", leyenda="Ir a ...", icono="ion ion-bag" }) => {
   return (
     <>
         <div className="small-box bg-info">
@@ -18,3 +19,13 @@ const BtnMainMenu = ({ titulo="Titulo", ruta="/", leyenda="Ir a ...", icono="ion
 }
 
 export default BtnMainMenu;
+
+BtnMainMenu.propTypes = {
+  titulo: PropTypes.string.isRequired,
+  leyenda: PropTypes.string.isRequired,
+}
+
+BtnMainMenu.defaultProps = {
+  titulo: "Titulo",
+  leyenda: "Ir a ...",
+}

@@ -57,7 +57,7 @@ const MenuItems = () => {
                             />
                         </div>
                         <div className="col-xs-12 col-md-6 col-lg-4">
-                            <BtnMainMenu titulo='Usuarios' leyenda='Ir a Usurios ' icono='fas fa-users' />
+                            <BtnMainMenu leyenda='Ir a Usurios ' icono='fas fa-users' />
                         </div>
                         <div className="col-xs-12 col-md-6 col-lg-4">
                             <BtnMainMenu titulo='Entradas & Salidas' leyenda='Ir a Entradas & Salidas ' icono='fas fa-boxes' />
